@@ -1,4 +1,4 @@
-# Built.is Plugin: About Basic
+# Built.is Plugin: About ShadCN
 
 A [Built.js](https://builtjs.com) plugin for About sections and pages, with ShadCN.
 
