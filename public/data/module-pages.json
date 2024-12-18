@@ -1,0 +1,51 @@
+{
+  "modulePages": [
+    {
+      "name": "aboutBase",
+      "description": "Main About page with hero, content, and team sections",
+      "page": {
+        "name": "about"
+      },
+      "sections": [
+        {
+          "name": "aboutHero",
+          "position": 1
+        },
+        {
+          "name": "aboutContent",
+          "position": 2
+        },
+        {
+          "name": "teamSection",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "name": "homeAboutTeaser",
+      "description": "Teaser for About page on Home page",
+      "page": {
+        "name": "home"
+      },
+      "sections": [
+        {
+          "name": "aboutTeaser",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "name": "teamMemberArticle",
+      "description": "Individual team member profile page",
+      "page": {
+        "name": "teamMemberArticle"
+      },
+      "sections": [
+        {
+          "name": "teamMemberProfile",
+          "position": 1
+        }
+      ]
+    }
+  ]
+}

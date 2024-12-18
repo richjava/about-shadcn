@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "_id": "author-1",
+      "_type": "author",
+      "fullName": "John Doe",
+      "slug": "john-doe",
+      "profile": "profile-1"
+    },
+    {
+      "_id": "author-2",
+      "_type": "author",
+      "fullName": "Jane Smith",
+      "slug": "jane-smith",
+      "profile": "profile-2"
+    }
+  ]
+}

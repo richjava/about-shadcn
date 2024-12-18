@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "_id": "feature-1",
+      "_type": "feature",
+      "title": "Zero-Install Components",
+      "description": "Simply copy and paste beautifully designed components directly into your project. No package installation or complex setup required."
+    },
+    {
+      "_id": "feature-2",
+      "_type": "feature",
+      "title": "Accessibility First",
+      "description": "Every component follows WAI-ARIA guidelines and includes keyboard navigation, focus management, and proper ARIA attributes."
+    },
+    {
+      "_id": "feature-3",
+      "_type": "feature",
+      "title": "Infinite Customization",
+      "description": "Built on Radix UI primitives and styled with Tailwind CSS, allowing for complete control over styling and behavior."
+    },
+    {
+      "_id": "feature-4",
+      "_type": "feature",
+      "title": "Dark Mode Ready",
+      "description": "Seamlessly switch between light and dark themes with our pre-configured color schemes and CSS variables."
+    },
+    {
+      "_id": "feature-5",
+      "_type": "feature",
+      "title": "TypeScript Powered",
+      "description": "Fully typed components for better developer experience and catch errors before they reach production."
+    },
+    {
+      "_id": "feature-6",
+      "_type": "feature",
+      "title": "Open Source Freedom",
+      "description": "MIT licensed and free to use in personal and commercial projects, with an active community of contributors."
+    }
+  ]
+}

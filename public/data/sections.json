@@ -1,0 +1,92 @@
+{
+  "sections": [
+    {
+      "name": "header",
+      "title": "Header",
+      "description": "Main navigation header with logo and menu items.",
+      "collections": {
+        "primaryMenuItem": {}
+      },
+      "templates": ["header1"],
+      "type": "layout",
+      "defaultTemplate": { "name": "header1" }
+    },
+    {
+      "name": "aboutHero",
+      "title": "About Hero",
+      "description": "The about page hero section with heading, blurb, and image.",
+      "data": {
+        "heading": "About Us",
+        "blurb": "Discover beautifully designed components that you can copy and paste into your apps. Free. Open Source.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=800&h=400&fit=crop",
+          "width": 800,
+          "height": 400
+        }
+      },
+      "templates": ["cover1"],
+      "type": "body",
+      "defaultTemplate": { "name": "cover1" }
+    },
+    {
+      "name": "aboutTeaser",
+      "title": "About Teaser",
+      "description": "A teaser section that leads to the about page.",
+      "data": {
+        "heading": "Why Choose Us?",
+        "blurb": "Build your next project faster with beautifully crafted components that are accessible, customizable, and open source."
+      },
+      "templates": ["block1"],
+      "type": "body",
+      "defaultTemplate": { "name": "block1" }
+    },
+    {
+      "name": "aboutContent",
+      "title": "About Content",
+      "description": "Main content section with mission and features.",
+      "data": {
+        "heading": "Our Mission",
+        "mission": "Our business is on the belief that beautiful, accessible, and performant web applications should be easy to create. We provide a collection of reusable components that you can copy and paste into your apps.",
+        "featuresHeading": "Key Features"
+      },
+      "collections": {
+        "feature": {}
+      },
+      "templates": ["block2"],
+      "type": "body",
+      "defaultTemplate": { "name": "block2" }
+    },
+    {
+      "name": "teamSection",
+      "title": "Team Section",
+      "description": "Section showcasing team members.",
+      "data": {
+        "heading": "Meet Our Team"
+      },
+      "collections": {
+        "teamMember": {
+          "config": { "limit": 3, "populate": [{ "name": "profile" }] }
+        }
+      },
+      "templates": ["cards1"],
+      "type": "body",
+      "defaultTemplate": { "name": "cards1" }
+    },
+    {
+      "name": "teamMemberProfile",
+      "title": "Team Member Profile",
+      "description": "Detailed profile page for a team member.",
+      "templates": ["profile1"],
+      "type": "body",
+      "defaultTemplate": { "name": "profile1" }
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "description": "Site footer with copyright information.",
+      "templates": ["footer1"],
+      "type": "layout",
+      "defaultTemplate": { "name": "footer1" }
+    }
+  ]
+}

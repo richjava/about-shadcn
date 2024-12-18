@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "_id": "team-member-1",
+      "_type": "teamMember",
+      "fullName": "Jane Cooper",
+      "slug": "jane-cooper",
+      "profile": "profile-1"
+    },
+    {
+      "_id": "team-member-2",
+      "_type": "teamMember",
+      "fullName": "Alex Morgan",
+      "slug": "alex-morgan",
+      "profile": "profile-2"
+    },
+    {
+      "_id": "team-member-3",
+      "_type": "teamMember",
+      "fullName": "Michael Foster",
+      "slug": "michael-foster",
+      "profile": "profile-3"
+    }
+  ]
+}

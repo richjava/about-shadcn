@@ -1,0 +1,92 @@
+{
+  "sections": {
+    "header": {
+      "name": "header",
+      "fields": {
+        "logo": {
+          "type": "image"
+        },
+        "navigation": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "fields": {
+              "label": {
+                "type": "string",
+                "required": true
+              },
+              "path": {
+                "type": "string",
+                "required": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "footer": {
+      "name": "footer",
+      "fields": {
+        "copyright": {
+          "type": "string"
+        }
+      }
+    },
+    "aboutHero": {
+      "name": "aboutHero",
+      "fields": {
+        "heading": {
+          "type": "string",
+          "required": true
+        },
+        "blurb": {
+          "type": "text",
+          "required": true
+        },
+        "image": {
+          "type": "image"
+        }
+      }
+    },
+    "aboutTeaser": {
+      "name": "aboutTeaser",
+      "fields": {
+        "heading": {
+          "type": "string",
+          "required": true
+        },
+        "blurb": {
+          "type": "text",
+          "required": true
+        }
+      }
+    },
+    "aboutContent": {
+      "name": "aboutContent",
+      "fields": {
+        "heading": {
+          "type": "string",
+          "required": true
+        },
+        "mission": {
+          "type": "text",
+          "required": true
+        },
+        "featuresHeading": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    "teamSection": {
+      "name": "teamSection",
+      "fields": {
+        "heading": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    "teamMemberProfile": { "name": "teamMemberProfile", "fields": {} }
+  }
+}

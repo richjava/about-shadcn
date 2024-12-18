@@ -1,0 +1,601 @@
+{
+  "contentTypes": [
+    {
+      "name": "feature",
+      "title": "Feature",
+      "dataPosition": 1,
+      "fields": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "description": {
+          "type": "text",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "teamMember",
+      "title": "Team Member",
+      "dataPosition": 2,
+      "fields": {
+        "fullName": {
+          "type": "string",
+          "required": true
+        },
+        "slug": {
+          "type": "uid",
+          "targetField": "fullName",
+          "required": true
+        },
+        "profile": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "profile"
+        }
+      }
+    },
+    {
+      "name": "profile",
+      "title": "Profile",
+      "dataPosition": 1,
+      "fields": {
+        "title": {
+          "type": "string",
+          "required": false
+        },
+        "excerpt": {
+          "type": "text",
+          "required": false
+        },
+        "bio": {
+          "type": "portabletext"
+        },
+        "position": {
+          "type": "string",
+          "required": false
+        },
+        "profileImage": {
+          "type": "image"
+        }
+      }
+    },
+    {
+      "name": "primaryMenuItem",
+      "title": "Primary Menu Item",
+      "dataPosition": 1,
+      "fields": {
+        "slug": {
+          "type": "uid",
+          "targetField": "label",
+          "required": true
+        },
+        "label": {
+          "type": "string",
+          "required": true
+        },
+        "url": {
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      }
+    }
+  ],
+  "pages": [
+    {
+      "name": "home",
+      "sections": [
+        {
+          "name": "aboutTeaser",
+          "template": "block1"
+        }
+      ],
+      "demoSections": [
+        {
+          "name": "aboutTeaser"
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "sections": [
+        {
+          "name": "aboutHero",
+          "template": "cover1"
+        },
+        {
+          "name": "aboutContent",
+          "template": "block2"
+        },
+        {
+          "name": "teamSection",
+          "template": "cards1"
+        }
+      ],
+      "demoSections": [
+        {
+          "name": "aboutHero"
+        },
+        {
+          "name": "aboutContent"
+        },
+        {
+          "name": "teamSection"
+        }
+      ]
+    },
+    {
+      "name": "teamMemberArticle",
+      "contentType": {
+        "name": "teamMember",
+        "config": {
+          "populate": [
+            {
+              "name": "profile"
+            }
+          ]
+        }
+      },
+      "sections": [
+        {
+          "name": "teamMemberProfile",
+          "template": "profile1"
+        }
+      ],
+      "demoSections": [
+        {
+          "name": "teamMemberProfile"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "name": "header",
+      "title": "Header",
+      "description": "Main navigation header with logo and menu items.",
+      "collections": {
+        "primaryMenuItem": {}
+      },
+      "templates": [
+        "header1"
+      ],
+      "type": "layout",
+      "defaultTemplate": {
+        "name": "header1"
+      }
+    },
+    {
+      "name": "aboutHero",
+      "title": "About Hero",
+      "description": "The about page hero section with heading, blurb, and image.",
+      "data": {
+        "heading": "About Us",
+        "blurb": "Discover beautifully designed components that you can copy and paste into your apps. Free. Open Source.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=800&h=400&fit=crop",
+          "width": 800,
+          "height": 400
+        }
+      },
+      "templates": [
+        "cover1"
+      ],
+      "type": "body",
+      "defaultTemplate": {
+        "name": "cover1"
+      }
+    },
+    {
+      "name": "aboutTeaser",
+      "title": "About Teaser",
+      "description": "A teaser section that leads to the about page.",
+      "data": {
+        "heading": "Why Choose Us?",
+        "blurb": "Build your next project faster with beautifully crafted components that are accessible, customizable, and open source."
+      },
+      "templates": [
+        "block1"
+      ],
+      "type": "body",
+      "defaultTemplate": {
+        "name": "block1"
+      }
+    },
+    {
+      "name": "aboutContent",
+      "title": "About Content",
+      "description": "Main content section with mission and features.",
+      "data": {
+        "heading": "Our Mission",
+        "mission": "Our business is on the belief that beautiful, accessible, and performant web applications should be easy to create. We provide a collection of reusable components that you can copy and paste into your apps.",
+        "featuresHeading": "Key Features"
+      },
+      "collections": {
+        "feature": {}
+      },
+      "templates": [
+        "block2"
+      ],
+      "type": "body",
+      "defaultTemplate": {
+        "name": "block2"
+      }
+    },
+    {
+      "name": "teamSection",
+      "title": "Team Section",
+      "description": "Section showcasing team members.",
+      "data": {
+        "heading": "Meet Our Team"
+      },
+      "collections": {
+        "teamMember": {
+          "config": {
+            "limit": 3,
+            "populate": [
+              {
+                "name": "profile"
+              }
+            ]
+          }
+        }
+      },
+      "templates": [
+        "cards1"
+      ],
+      "type": "body",
+      "defaultTemplate": {
+        "name": "cards1"
+      }
+    },
+    {
+      "name": "teamMemberProfile",
+      "title": "Team Member Profile",
+      "description": "Detailed profile page for a team member.",
+      "templates": [
+        "profile1"
+      ],
+      "type": "body",
+      "defaultTemplate": {
+        "name": "profile1"
+      }
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "description": "Site footer with copyright information.",
+      "templates": [
+        "footer1"
+      ],
+      "type": "layout",
+      "defaultTemplate": {
+        "name": "footer1"
+      }
+    }
+  ],
+  "templates": [
+    {
+      "name": "header1",
+      "title": "Header 1",
+      "category": "headers",
+      "namespace": "richjava_about-shad-cn",
+      "description": "Main navigation header with logo and menu items."
+    },
+    {
+      "name": "footer1",
+      "title": "Footer 1",
+      "category": "footers",
+      "namespace": "richjava_about-shad-cn",
+      "description": "Simple footer with copyright information."
+    },
+    {
+      "name": "cover1",
+      "title": "Cover 1",
+      "category": "covers",
+      "namespace": "richjava_about-shad-cn",
+      "description": "Hero section with heading, blurb, and supporting image.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733645412/builtjs/plugin/richjava_about-shad-cn/about-cover1.png"
+    },
+    {
+      "name": "block1",
+      "title": "Block 1",
+      "category": "blocks",
+      "namespace": "richjava_about-shad-cn",
+      "description": "Teaser block with heading, blurb, and call-to-action.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604040/builtjs/plugin/richjava_about-shad-cn/home-block1.png"
+    },
+    {
+      "name": "block2",
+      "title": "Block 2",
+      "category": "blocks",
+      "namespace": "richjava_about-shad-cn",
+      "description": "Content block with mission statement and feature grid.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604035/builtjs/plugin/richjava_about-shad-cn/about-block2.png"
+    },
+    {
+      "name": "cards1",
+      "title": "Cards 1",
+      "category": "cards",
+      "namespace": "richjava_about-shad-cn",
+      "description": "Grid of team member cards with images and details.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652216/builtjs/plugin/richjava_about-shad-cn/about-cards1.png"
+    },
+    {
+      "name": "profile1",
+      "title": "Profile Article 1",
+      "category": "profiles",
+      "namespace": "richjava_about-basic",
+      "description": "Article section with hero image for introducing authors.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652242/builtjs/plugin/richjava_about-shad-cn/team-member-profile1.png"
+    },
+    {
+      "name": "header1",
+      "title": "Header 1",
+      "category": "headers",
+      "namespace": "richjava_about-shad-cn",
+      "description": "Main navigation header with logo and menu items."
+    },
+    {
+      "name": "footer1",
+      "title": "Footer 1",
+      "category": "footers",
+      "namespace": "richjava_about-shad-cn",
+      "description": "Simple footer with copyright information."
+    },
+    {
+      "name": "cover1",
+      "title": "Cover 1",
+      "category": "covers",
+      "namespace": "richjava_about-shad-cn",
+      "description": "Hero section with heading, blurb, and supporting image.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733645412/builtjs/plugin/richjava_about-shad-cn/about-cover1.png"
+    },
+    {
+      "name": "block1",
+      "title": "Block 1",
+      "category": "blocks",
+      "namespace": "richjava_about-shad-cn",
+      "description": "Teaser block with heading, blurb, and call-to-action.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604040/builtjs/plugin/richjava_about-shad-cn/home-block1.png"
+    },
+    {
+      "name": "block2",
+      "title": "Block 2",
+      "category": "blocks",
+      "namespace": "richjava_about-shad-cn",
+      "description": "Content block with mission statement and feature grid.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604035/builtjs/plugin/richjava_about-shad-cn/about-block2.png"
+    },
+    {
+      "name": "cards1",
+      "title": "Cards 1",
+      "category": "cards",
+      "namespace": "richjava_about-shad-cn",
+      "description": "Grid of team member cards with images and details.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652216/builtjs/plugin/richjava_about-shad-cn/about-cards1.png"
+    },
+    {
+      "name": "profile1",
+      "title": "Profile Article 1",
+      "category": "profiles",
+      "namespace": "richjava_about-basic",
+      "description": "Article section with hero image for introducing authors.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652242/builtjs/plugin/richjava_about-shad-cn/team-member-profile1.png"
+    }
+  ],
+  "layout": {
+    "contentIndex": 1,
+    "sections": [
+      {
+        "name": "header",
+        "template": "header1"
+      },
+      {
+        "name": "footer",
+        "template": "footer1"
+      }
+    ]
+  },
+  "collections": {
+    "authors": [
+      {
+        "_id": "author-1",
+        "_type": "author",
+        "fullName": "John Doe",
+        "slug": "john-doe",
+        "profile": "profile-1"
+      },
+      {
+        "_id": "author-2",
+        "_type": "author",
+        "fullName": "Jane Smith",
+        "slug": "jane-smith",
+        "profile": "profile-2"
+      }
+    ],
+    "features": [
+      {
+        "_id": "feature-1",
+        "_type": "feature",
+        "title": "Zero-Install Components",
+        "description": "Simply copy and paste beautifully designed components directly into your project. No package installation or complex setup required."
+      },
+      {
+        "_id": "feature-2",
+        "_type": "feature",
+        "title": "Accessibility First",
+        "description": "Every component follows WAI-ARIA guidelines and includes keyboard navigation, focus management, and proper ARIA attributes."
+      },
+      {
+        "_id": "feature-3",
+        "_type": "feature",
+        "title": "Infinite Customization",
+        "description": "Built on Radix UI primitives and styled with Tailwind CSS, allowing for complete control over styling and behavior."
+      },
+      {
+        "_id": "feature-4",
+        "_type": "feature",
+        "title": "Dark Mode Ready",
+        "description": "Seamlessly switch between light and dark themes with our pre-configured color schemes and CSS variables."
+      },
+      {
+        "_id": "feature-5",
+        "_type": "feature",
+        "title": "TypeScript Powered",
+        "description": "Fully typed components for better developer experience and catch errors before they reach production."
+      },
+      {
+        "_id": "feature-6",
+        "_type": "feature",
+        "title": "Open Source Freedom",
+        "description": "MIT licensed and free to use in personal and commercial projects, with an active community of contributors."
+      }
+    ],
+    "primaryMenuItems": [
+      {
+        "_id": "menu-item-1",
+        "_type": "primaryMenuItem",
+        "label": "Home",
+        "slug": "home",
+        "url": "/"
+      },
+      {
+        "_id": "menu-item-2",
+        "_type": "primaryMenuItem",
+        "label": "About",
+        "slug": "about",
+        "url": "/about"
+      }
+    ],
+    "profiles": [
+      {
+        "_id": "profile-2",
+        "_type": "profile",
+        "title": "Senior Developer",
+        "excerpt": "Experienced full-stack developer with a passion for UI/UX",
+        "bio": [
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "11a60e06f0df224064bcc49031e291a1",
+                "_type": "span",
+                "text": "Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet donec."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031e291a1",
+            "markDefs": []
+          }
+        ],
+        "position": "Senior Developer",
+        "profileImage": {
+          "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+          "width": 400,
+          "height": 400
+        }
+      },
+      {
+        "_id": "profile-1",
+        "_type": "profile",
+        "title": "UI/UX Designer",
+        "excerpt": "Creative designer focused on user experience and accessibility",
+        "bio": [
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "11a60e06f0df224064bcc49031e291a1",
+                "_type": "span",
+                "text": "Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet donec."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031e291a1",
+            "markDefs": []
+          }
+        ],
+        "position": "Lead Designer",
+        "profileImage": {
+          "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+          "width": 400,
+          "height": 400
+        }
+      },
+      {
+        "_id": "profile-3",
+        "_type": "profile",
+        "title": "Web Designer",
+        "excerpt": "Creative designer focused on user experience and accessibility",
+        "bio": [
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "11a60e06f0df224064bcc49031e291a1",
+                "_type": "span",
+                "text": "Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet donec."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031e291a1",
+            "markDefs": []
+          }
+        ],
+        "position": "Lead Web Designer",
+        "profileImage": {
+          "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
+          "width": 400,
+          "height": 400
+        }
+      }
+    ],
+    "teamMembers": [
+      {
+        "_id": "team-member-1",
+        "_type": "teamMember",
+        "fullName": "Jane Cooper",
+        "slug": "jane-cooper",
+        "profile": "profile-1"
+      },
+      {
+        "_id": "team-member-2",
+        "_type": "teamMember",
+        "fullName": "Alex Morgan",
+        "slug": "alex-morgan",
+        "profile": "profile-2"
+      },
+      {
+        "_id": "team-member-3",
+        "_type": "teamMember",
+        "fullName": "Michael Foster",
+        "slug": "michael-foster",
+        "profile": "profile-3"
+      }
+    ]
+  },
+  "plugins": [],
+  "global": {
+    "name": "About ShadCN",
+    "description": "A comprehensive guide to ShadCN UI components and their usage",
+    "logo": {
+      "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870579/builtjs_bert2m.svg",
+      "width": 45,
+      "height": 45
+    },
+    "navigation": [
+      {
+        "label": "Home",
+        "path": "/"
+      },
+      {
+        "label": "About",
+        "path": "/about"
+      }
+    ],
+    "social": {
+      "github": "https://github.com/shadcn/ui",
+      "twitter": "https://twitter.com/shadcn"
+    }
+  }
+}

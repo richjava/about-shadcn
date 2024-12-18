@@ -1,0 +1,13 @@
+{
+  "plugin": {
+    "namespace": "richjava_about-shad-cn",
+    "title": "About ShadCN",
+    "description": "About plugin with information about the business, its features, and team.",
+    "mainModule": {
+      "name": "about"
+    },
+    "config": {
+      "dependencies": []
+    }
+  }
+}

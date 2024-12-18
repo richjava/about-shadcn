@@ -1,0 +1,20 @@
+{
+  "modules": [
+    {
+      "name": "about",
+      "title": "About",
+      "description": "Displays information about the business, its features, and team",
+      "modulePages": [
+        {
+          "name": "aboutBase"
+        },
+        {
+          "name": "homeAboutTeaser"
+        },
+        {
+          "name": "teamMemberArticle"
+        }
+      ]
+    }
+  ]
+}

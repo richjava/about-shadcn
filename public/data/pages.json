@@ -1,0 +1,49 @@
+{
+  "pages": [
+    {
+      "name": "home",
+      "sections": [
+        {
+          "name": "aboutTeaser",
+          "template": "block1"
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "sections": [
+        {
+          "name": "aboutHero",
+          "template": "cover1"
+        },
+        {
+          "name": "aboutContent",
+          "template": "block2"
+        },
+        {
+          "name": "teamSection",
+          "template": "cards1"
+        }
+      ]
+    },
+    {
+      "name": "teamMemberArticle",
+      "contentType": {
+        "name": "teamMember",
+        "config": {
+          "populate": [
+            {
+              "name": "profile"
+            }
+          ]
+        }
+      },
+      "sections": [
+        {
+          "name": "teamMemberProfile",
+          "template": "profile1"
+        }
+      ]
+    }
+  ]
+}
