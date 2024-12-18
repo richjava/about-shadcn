@@ -8,7 +8,7 @@ interface LayoutProps {
   page?: any;
 }
 
-export default function Layout({ children, layoutComps, page }: LayoutProps) {
+export default function Layout({ children, layoutComps = [], page }: LayoutProps) {
   if (!page) return null;
 
   return (
