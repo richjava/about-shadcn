@@ -3,6 +3,7 @@
     "namespace": "richjava_about-shad-cn",
     "title": "About ShadCN",
     "description": "About plugin with information about the business, its features, and team.",
+    "repoUrl": "https://github.com/richjava/about-shad-cn",
     "mainModule": {
       "name": "about"
     },
