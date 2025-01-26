@@ -2,7 +2,7 @@
 
 A [Built.js](https://builtjs.com) plugin for About sections and pages, with ShadCN.
 
-Demo: [https://about-shad-cn.vercel.app](https://about-shad-cn.vercel.app)
+Demo: [https://about-shadcn.vercel.app](https://about-shadcn.vercel.app)
 
 ## Installation
 1. Install dependencies:

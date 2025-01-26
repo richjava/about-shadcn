@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useRouter} from 'next/router';
-import Layout from '@/components/plugins/richjava_about-shad-cn/layout';
+import Layout from '@/components/plugins/richjava_about-shadcn/layout';
 import {getComponents} from '@/lib/builtjs-utils';
 const {transformPage, fetchEntry, fetchEntries} = require('@builtjs/theme');
 
