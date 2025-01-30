@@ -297,7 +297,7 @@
       "category": "covers",
       "namespace": "richjava_about-shadcn",
       "description": "Hero section with heading, blurb, and supporting image.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733645412/builtjs/plugin/richjava_about-shadcn/about-cover1.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733645412/builtjs/plugin/richjava_about-shad-cn/about-cover1.png"
     },
     {
       "name": "block1",
@@ -305,7 +305,7 @@
       "category": "blocks",
       "namespace": "richjava_about-shadcn",
       "description": "Teaser block with heading, blurb, and call-to-action.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604040/builtjs/plugin/richjava_about-shadcn/home-block1.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604040/builtjs/plugin/richjava_about-shad-cn/home-block1.png"
     },
     {
       "name": "block2",
@@ -313,7 +313,7 @@
       "category": "blocks",
       "namespace": "richjava_about-shadcn",
       "description": "Content block with mission statement and feature grid.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604035/builtjs/plugin/richjava_about-shadcn/about-block2.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604035/builtjs/plugin/richjava_about-shad-cn/about-block2.png"
     },
     {
       "name": "cards1",
@@ -321,7 +321,7 @@
       "category": "cards",
       "namespace": "richjava_about-shadcn",
       "description": "Grid of team member cards with images and details.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652216/builtjs/plugin/richjava_about-shadcn/about-cards1.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652216/builtjs/plugin/richjava_about-shad-cn/about-cards1.png"
     },
     {
       "name": "profile1",
@@ -329,7 +329,7 @@
       "category": "profiles",
       "namespace": "richjava_about-basic",
       "description": "Article section with hero image for introducing authors.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652242/builtjs/plugin/richjava_about-shadcn/team-member-profile1.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652242/builtjs/plugin/richjava_about-shad-cn/team-member-profile1.png"
     },
     {
       "name": "header1",
@@ -351,7 +351,7 @@
       "category": "covers",
       "namespace": "richjava_about-shadcn",
       "description": "Hero section with heading, blurb, and supporting image.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733645412/builtjs/plugin/richjava_about-shadcn/about-cover1.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733645412/builtjs/plugin/richjava_about-shad-cn/about-cover1.png"
     },
     {
       "name": "block1",
@@ -359,7 +359,7 @@
       "category": "blocks",
       "namespace": "richjava_about-shadcn",
       "description": "Teaser block with heading, blurb, and call-to-action.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604040/builtjs/plugin/richjava_about-shadcn/home-block1.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604040/builtjs/plugin/richjava_about-shad-cn/home-block1.png"
     },
     {
       "name": "block2",
@@ -367,7 +367,7 @@
       "category": "blocks",
       "namespace": "richjava_about-shadcn",
       "description": "Content block with mission statement and feature grid.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604035/builtjs/plugin/richjava_about-shadcn/about-block2.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604035/builtjs/plugin/richjava_about-shad-cn/about-block2.png"
     },
     {
       "name": "cards1",
@@ -375,7 +375,7 @@
       "category": "cards",
       "namespace": "richjava_about-shadcn",
       "description": "Grid of team member cards with images and details.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652216/builtjs/plugin/richjava_about-shadcn/about-cards1.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652216/builtjs/plugin/richjava_about-shad-cn/about-cards1.png"
     },
     {
       "name": "profile1",
@@ -383,7 +383,7 @@
       "category": "profiles",
       "namespace": "richjava_about-basic",
       "description": "Article section with hero image for introducing authors.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652242/builtjs/plugin/richjava_about-shadcn/team-member-profile1.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652242/builtjs/plugin/richjava_about-shad-cn/team-member-profile1.png"
     }
   ],
   "layout": {
@@ -402,11 +402,11 @@
   "collections": {
     "authors": [
       {
-        "_id": "author-1",
+        "_id": "author-2",
         "_type": "author",
-        "fullName": "John Doe",
-        "slug": "john-doe",
-        "profile": "profile-1"
+        "fullName": "Jane Smith",
+        "slug": "jane-smith",
+        "profile": "profile-2"
       },
       {
         "_id": "author-2",
@@ -414,14 +414,21 @@
         "fullName": "Jane Smith",
         "slug": "jane-smith",
         "profile": "profile-2"
+      },
+      {
+        "_id": "author-1",
+        "_type": "author",
+        "fullName": "John Doe",
+        "slug": "john-doe",
+        "profile": "profile-1"
       }
     ],
     "features": [
       {
-        "_id": "feature-1",
+        "_id": "feature-6",
         "_type": "feature",
-        "title": "Zero-Install Components",
-        "description": "Simply copy and paste beautifully designed components directly into your project. No package installation or complex setup required."
+        "title": "Open Source Freedom",
+        "description": "MIT licensed and free to use in personal and commercial projects, with an active community of contributors."
       },
       {
         "_id": "feature-2",
@@ -456,11 +463,11 @@
     ],
     "primaryMenuItems": [
       {
-        "_id": "menu-item-1",
+        "_id": "menu-item-2",
         "_type": "primaryMenuItem",
-        "label": "Home",
-        "slug": "home",
-        "url": "/"
+        "label": "About",
+        "slug": "about",
+        "url": "/about"
       },
       {
         "_id": "menu-item-2",
@@ -468,14 +475,21 @@
         "label": "About",
         "slug": "about",
         "url": "/about"
+      },
+      {
+        "_id": "menu-item-1",
+        "_type": "primaryMenuItem",
+        "label": "Home",
+        "slug": "home",
+        "url": "/"
       }
     ],
     "profiles": [
       {
-        "_id": "profile-2",
+        "_id": "profile-3",
         "_type": "profile",
-        "title": "Senior Developer",
-        "excerpt": "Experienced full-stack developer with a passion for UI/UX",
+        "title": "Web Designer",
+        "excerpt": "Creative designer focused on user experience and accessibility",
         "bio": [
           {
             "_type": "block",
@@ -490,9 +504,9 @@
             "markDefs": []
           }
         ],
-        "position": "Senior Developer",
+        "position": "Lead Web Designer",
         "profileImage": {
-          "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+          "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
           "width": 400,
           "height": 400
         }
@@ -552,11 +566,11 @@
     ],
     "teamMembers": [
       {
-        "_id": "team-member-1",
+        "_id": "team-member-3",
         "_type": "teamMember",
-        "fullName": "Jane Cooper",
-        "slug": "jane-cooper",
-        "profile": "profile-1"
+        "fullName": "Michael Foster",
+        "slug": "michael-foster",
+        "profile": "profile-3"
       },
       {
         "_id": "team-member-2",
@@ -571,6 +585,13 @@
         "fullName": "Michael Foster",
         "slug": "michael-foster",
         "profile": "profile-3"
+      },
+      {
+        "_id": "team-member-1",
+        "_type": "teamMember",
+        "fullName": "Jane Cooper",
+        "slug": "jane-cooper",
+        "profile": "profile-1"
       }
     ]
   },

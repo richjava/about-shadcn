@@ -20,7 +20,7 @@
       "category": "covers",
       "namespace": "richjava_about-shadcn",
       "description": "Hero section with heading, blurb, and supporting image.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733645412/builtjs/plugin/richjava_about-shadcn/about-cover1.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733645412/builtjs/plugin/richjava_about-shad-cn/about-cover1.png"
     },
     {
       "name": "block1",
@@ -28,7 +28,7 @@
       "category": "blocks",
       "namespace": "richjava_about-shadcn",
       "description": "Teaser block with heading, blurb, and call-to-action.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604040/builtjs/plugin/richjava_about-shadcn/home-block1.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604040/builtjs/plugin/richjava_about-shad-cn/home-block1.png"
     },
     {
       "name": "block2",
@@ -36,7 +36,7 @@
       "category": "blocks",
       "namespace": "richjava_about-shadcn",
       "description": "Content block with mission statement and feature grid.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604035/builtjs/plugin/richjava_about-shadcn/about-block2.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604035/builtjs/plugin/richjava_about-shad-cn/about-block2.png"
     },
     {
       "name": "cards1",
@@ -44,7 +44,7 @@
       "category": "cards",
       "namespace": "richjava_about-shadcn",
       "description": "Grid of team member cards with images and details.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652216/builtjs/plugin/richjava_about-shadcn/about-cards1.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652216/builtjs/plugin/richjava_about-shad-cn/about-cards1.png"
     },
     {
       "name": "profile1",
@@ -52,7 +52,7 @@
       "category": "profiles",
       "namespace": "richjava_about-basic",
       "description": "Article section with hero image for introducing authors.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652242/builtjs/plugin/richjava_about-shadcn/team-member-profile1.png"
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652242/builtjs/plugin/richjava_about-shad-cn/team-member-profile1.png"
     }
   ]
 }

@@ -4,7 +4,7 @@
     "title": "About ShadCN",
     "description": "About plugin with information about the business, its features, and team.",
     "repoUrl": "https://github.com/richjava/about-shadcn",
-    "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652216/builtjs/plugin/richjava_about-shadcn/about-cards1.png",
+    "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652216/builtjs/plugin/richjava_about-shad-cn/about-cards1.png",
     "demoUrl": "https://about-shadcn.vercel.app",
     "designSystem": "shadcn",
     "mainModule": {

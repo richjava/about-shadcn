@@ -16,17 +16,17 @@ export default function AboutTeaser({ content }: AboutTeaserProps) {
 
   return (
     <section id="block1" className="py-20">
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-auto">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-center">{heading}</h2>
-          <p className="text-gray-600 mb-8 text-center">{blurb}</p>
+          <h2 className="mb-6 text-3xl font-bold text-center">{heading}</h2>
+          <p className="mb-8 text-center text-gray-600">{blurb}</p>
           <div className="text-center">
             <Link 
               href="/about"
-              className="inline-flex items-center space-x-2 bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center px-6 py-3 space-x-2 text-white transition-colors rounded-md bg-primary hover:bg-gray-800"
             >
               <span>Learn More</span>
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>

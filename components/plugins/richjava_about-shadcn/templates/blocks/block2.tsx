@@ -52,30 +52,30 @@ export default function AboutContent({ content }: AboutContentProps) {
 
   return (
     <section  id="block2" className="py-20">
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-auto">
         <div className="max-w-4xl mx-auto">
-          <div className="prose prose-lg mb-16">
-            <h2 className="text-3xl font-bold mb-6">{heading}</h2>
-            <p className="text-gray-600 text-lg leading-relaxed">{mission}</p>
+          <div className="mb-16 prose prose-lg">
+            <h2 className="mb-6 text-3xl font-bold">{heading}</h2>
+            <p className="text-lg leading-relaxed text-gray-600">{mission}</p>
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-8 text-center">{featuresHeading}</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <h3 className="mb-8 text-2xl font-bold text-center">{featuresHeading}</h3>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               {features.map((feature) => (
                 <div 
                   key={feature.title} 
-                  className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                  className="p-6 transition-shadow bg-white border border-gray-100 rounded-lg shadow-sm hover:shadow-md"
                 >
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0">
-                      <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                        <Check className="h-5 w-5 text-white" />
+                      <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary">
+                        <Check className="w-5 h-5 text-white" />
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-lg mb-2">{feature.title}</h4>
-                      <p className="text-gray-600 leading-relaxed">
+                      <h4 className="mb-2 text-lg font-semibold">{feature.title}</h4>
+                      <p className="leading-relaxed text-gray-600">
                         {feature.description}
                       </p>
                     </div>
