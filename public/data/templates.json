@@ -53,6 +53,12 @@
       "namespace": "richjava_about-basic",
       "description": "Article section with hero image for introducing authors.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652242/builtjs/plugin/richjava_about-shad-cn/team-member-profile1.png"
+    },{
+      "name": "seo",
+      "title": "SEO",
+      "category": "head",
+      "namespace": "richjava_social-proof-shadcn",
+      "description": "Define SEO meta titles, meta descriptions and social media meta data."
     }
   ]
 }

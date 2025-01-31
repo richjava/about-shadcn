@@ -12,6 +12,26 @@
       "defaultTemplate": { "name": "header1" }
     },
     {
+      "name": "aboutSeo",
+      "title": "About SEO",
+      "data": {
+        "pageTitle": "About | Corporate Basic Built.JS Theme",
+        "description": "About page for a site built with the About ShadCN Built.js Plugin.",
+        "shareImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
+          "path": "/images/image.png",
+          "width": 1280,
+          "height": 768,
+          "type": "image"
+        },
+        "twitterCardType": "summary"
+      },
+      "templates": ["seo"],
+      "type": "head",
+      "defaultTemplate": { "name": "seo" },
+      "collections": {}
+    },
+    {
       "name": "aboutHero",
       "title": "About Hero",
       "description": "The about page hero section with heading, blurb, and image.",

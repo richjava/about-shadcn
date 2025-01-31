@@ -116,6 +116,9 @@
       ],
       "demoSections": [
         {
+          "name": "aboutSeo"
+        },
+        {
           "name": "aboutHero"
         },
         {
@@ -166,6 +169,30 @@
       "defaultTemplate": {
         "name": "header1"
       }
+    },
+    {
+      "name": "aboutSeo",
+      "title": "About SEO",
+      "data": {
+        "pageTitle": "About | Corporate Basic Built.JS Theme",
+        "description": "About page for a site built with the About ShadCN Built.js Plugin.",
+        "shareImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
+          "path": "/images/image.png",
+          "width": 1280,
+          "height": 768,
+          "type": "image"
+        },
+        "twitterCardType": "summary"
+      },
+      "templates": [
+        "seo"
+      ],
+      "type": "head",
+      "defaultTemplate": {
+        "name": "seo"
+      },
+      "collections": {}
     },
     {
       "name": "aboutHero",
@@ -332,6 +359,13 @@
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652242/builtjs/plugin/richjava_about-shad-cn/team-member-profile1.png"
     },
     {
+      "name": "seo",
+      "title": "SEO",
+      "category": "head",
+      "namespace": "richjava_social-proof-shadcn",
+      "description": "Define SEO meta titles, meta descriptions and social media meta data."
+    },
+    {
       "name": "header1",
       "title": "Header 1",
       "category": "headers",
@@ -384,6 +418,13 @@
       "namespace": "richjava_about-basic",
       "description": "Article section with hero image for introducing authors.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652242/builtjs/plugin/richjava_about-shad-cn/team-member-profile1.png"
+    },
+    {
+      "name": "seo",
+      "title": "SEO",
+      "category": "head",
+      "namespace": "richjava_social-proof-shadcn",
+      "description": "Define SEO meta titles, meta descriptions and social media meta data."
     }
   ],
   "layout": {
@@ -402,33 +443,26 @@
   "collections": {
     "authors": [
       {
-        "_id": "author-2",
-        "_type": "author",
-        "fullName": "Jane Smith",
-        "slug": "jane-smith",
-        "profile": "profile-2"
-      },
-      {
-        "_id": "author-2",
-        "_type": "author",
-        "fullName": "Jane Smith",
-        "slug": "jane-smith",
-        "profile": "profile-2"
-      },
-      {
         "_id": "author-1",
         "_type": "author",
         "fullName": "John Doe",
         "slug": "john-doe",
         "profile": "profile-1"
+      },
+      {
+        "_id": "author-2",
+        "_type": "author",
+        "fullName": "Jane Smith",
+        "slug": "jane-smith",
+        "profile": "profile-2"
       }
     ],
     "features": [
       {
-        "_id": "feature-6",
+        "_id": "feature-1",
         "_type": "feature",
-        "title": "Open Source Freedom",
-        "description": "MIT licensed and free to use in personal and commercial projects, with an active community of contributors."
+        "title": "Zero-Install Components",
+        "description": "Simply copy and paste beautifully designed components directly into your project. No package installation or complex setup required."
       },
       {
         "_id": "feature-2",
@@ -463,33 +497,26 @@
     ],
     "primaryMenuItems": [
       {
-        "_id": "menu-item-2",
-        "_type": "primaryMenuItem",
-        "label": "About",
-        "slug": "about",
-        "url": "/about"
-      },
-      {
-        "_id": "menu-item-2",
-        "_type": "primaryMenuItem",
-        "label": "About",
-        "slug": "about",
-        "url": "/about"
-      },
-      {
         "_id": "menu-item-1",
         "_type": "primaryMenuItem",
         "label": "Home",
         "slug": "home",
         "url": "/"
+      },
+      {
+        "_id": "menu-item-2",
+        "_type": "primaryMenuItem",
+        "label": "About",
+        "slug": "about",
+        "url": "/about"
       }
     ],
     "profiles": [
       {
-        "_id": "profile-3",
+        "_id": "profile-2",
         "_type": "profile",
-        "title": "Web Designer",
-        "excerpt": "Creative designer focused on user experience and accessibility",
+        "title": "Senior Developer",
+        "excerpt": "Experienced full-stack developer with a passion for UI/UX",
         "bio": [
           {
             "_type": "block",
@@ -504,9 +531,9 @@
             "markDefs": []
           }
         ],
-        "position": "Lead Web Designer",
+        "position": "Senior Developer",
         "profileImage": {
-          "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
+          "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
           "width": 400,
           "height": 400
         }
@@ -566,11 +593,11 @@
     ],
     "teamMembers": [
       {
-        "_id": "team-member-3",
+        "_id": "team-member-1",
         "_type": "teamMember",
-        "fullName": "Michael Foster",
-        "slug": "michael-foster",
-        "profile": "profile-3"
+        "fullName": "Jane Cooper",
+        "slug": "jane-cooper",
+        "profile": "profile-1"
       },
       {
         "_id": "team-member-2",
@@ -585,13 +612,6 @@
         "fullName": "Michael Foster",
         "slug": "michael-foster",
         "profile": "profile-3"
-      },
-      {
-        "_id": "team-member-1",
-        "_type": "teamMember",
-        "fullName": "Jane Cooper",
-        "slug": "jane-cooper",
-        "profile": "profile-1"
       }
     ]
   },

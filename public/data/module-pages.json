@@ -8,16 +8,20 @@
       },
       "sections": [
         {
-          "name": "aboutHero",
+          "name": "aboutSeo",
           "position": 1
         },
         {
-          "name": "aboutContent",
+          "name": "aboutHero",
           "position": 2
         },
         {
-          "name": "teamSection",
+          "name": "aboutContent",
           "position": 3
+        },
+        {
+          "name": "teamSection",
+          "position": 4
         }
       ]
     },
