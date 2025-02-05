@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from 'next/image'
 import { PortableText } from "@portabletext/react"
 import { widthForImage, heightForImage } from '@/lib/builtjs-utils'
@@ -28,6 +29,25 @@ export default function TeamMemberProfile({ content }: TeamMemberProfileProps) {
   
 
   return (
+    <>
+      <Head>
+        {member && (
+          <>
+            <title>{member.fullName} | Team Member | About ShadCN Built.js Plugin</title>
+            <meta property="og:title" content={member.fullName} />
+            <meta name="twitter:title" content={member.fullName} />
+          </>
+        )}
+        {member && member.profile?.profileImage?.url && (
+          <>
+            <meta property="og:image" content={member.profile.profileImage.url} />
+            <meta name="twitter:image" content={member.profile.profileImage.url} />
+            <meta name="image" content={member.profile.profileImage.url} />
+          </>
+        )}
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
     <section id="profile1" className="py-20">
       <div className="container px-4 mx-auto">
         <div className="max-w-4xl mx-auto">
@@ -60,5 +80,6 @@ export default function TeamMemberProfile({ content }: TeamMemberProfileProps) {
         </div>
       </div>
     </section>
+    </>
   )
 }
