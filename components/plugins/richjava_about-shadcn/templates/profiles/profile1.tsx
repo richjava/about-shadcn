@@ -22,7 +22,6 @@ interface TeamMemberProfileProps {
 }
 
 export default function TeamMemberProfile({ content }: TeamMemberProfileProps) {
-  console.log({content})
   if (!content) return <></>;
   const { entry: member = null } = { ...content };
   if (!member) return <></>;
