@@ -11,7 +11,16 @@
       "name": "about"
     },
     "config": {
-      "dependencies": []
+      "dependencies": [
+        "@portabletext/react",
+        "@radix-ui/react-slot",
+        "class-variance-authority",
+        "clsx",
+        "lucide-react",
+        "next-themes",
+        "tailwind-merge",
+        "tailwindcss-animate"
+      ]
     }
   }
 }

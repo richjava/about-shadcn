@@ -6,17 +6,8 @@
         "required": true,
         "default": "About ShadCN"
       },
-      "description": {
-        "type": "text",
-        "required": true
-      },
       "logo": {
         "type": "image"
-      },
-      "navigation": {
-        "type": "relation",
-        "relation": "oneToMany",
-        "target": "navigationItem"
       }
     }
   }

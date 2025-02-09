@@ -2,27 +2,7 @@
   "sections": {
     "header": {
       "name": "header",
-      "fields": {
-        "logo": {
-          "type": "image"
-        },
-        "navigation": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "fields": {
-              "label": {
-                "type": "string",
-                "required": true
-              },
-              "path": {
-                "type": "string",
-                "required": true
-              }
-            }
-          }
-        }
-      }
+      "fields": {}
     },
     "footer": {
       "name": "footer",
