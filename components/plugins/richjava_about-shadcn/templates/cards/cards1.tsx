@@ -34,6 +34,7 @@ interface TeamSectionProps {
 export default function TeamSection({ content }: TeamSectionProps) {
   const heading = content?.data?.heading || 'Meet Our Team'
   const team = content?.collections?.teamMember || []
+  console.log({team})
 
   return (
     <section id="cards1" className="py-20 bg-gray-50">
@@ -46,19 +47,19 @@ export default function TeamSection({ content }: TeamSectionProps) {
               href={`/${collectionSlug(member)}/${entrySlug(member)}`}
               className="block overflow-hidden transition-shadow bg-white rounded-lg shadow-md hover:shadow-lg"
             >
-              {member.profile.profileImage && (
+              {member?.profile?.profileImage && (
                 <Image 
-                  src={member.profile.profileImage.url}
-                  width={widthForImage(member.profile.profileImage)}
-                  height={heightForImage(member.profile.profileImage)}
-                  alt={member.fullName}
+                  src={member?.profile?.profileImage.url}
+                  width={widthForImage(member?.profile?.profileImage)}
+                  height={heightForImage(member?.profile?.profileImage)}
+                  alt={member?.fullName}
                   className="object-cover w-full h-64"
                 />
               )}
               <div className="p-6">
                 <h3 className="mb-1 text-xl font-bold">{member.fullName}</h3>
-                <p className="mb-2 text-gray-600">{member.profile.position}</p>
-                <p className="text-sm text-gray-500">{member.profile.excerpt}</p>
+                <p className="mb-2 text-gray-600">{member?.profile?.position}</p>
+                <p className="text-sm text-gray-500">{member?.profile?.excerpt}</p>
               </div>
             </Link>
           ))}
