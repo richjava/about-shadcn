@@ -35,6 +35,7 @@
       "name": "aboutHero",
       "title": "About Hero",
       "description": "The about page hero section with heading, blurb, and image.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733645412/builtjs/plugin/richjava_about-shad-cn/about-cover1.png",
       "data": {
         "heading": "About Us",
         "blurb": "Discover beautifully designed components that you can copy and paste into your apps. Free. Open Source.",
@@ -52,6 +53,7 @@
       "name": "aboutTeaser",
       "title": "About Teaser",
       "description": "A teaser section that leads to the about page.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604040/builtjs/plugin/richjava_about-shad-cn/home-block1.png",
       "data": {
         "heading": "Why Choose Us?",
         "blurb": "Build your next project faster with beautifully crafted components that are accessible, customizable, and open source."
@@ -64,6 +66,7 @@
       "name": "aboutContent",
       "title": "About Content",
       "description": "Main content section with mission and features.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733604035/builtjs/plugin/richjava_about-shad-cn/about-block2.png",
       "data": {
         "heading": "Our Mission",
         "mission": "Our business is on the belief that beautiful, accessible, and performant web applications should be easy to create. We provide a collection of reusable components that you can copy and paste into your apps.",
@@ -80,6 +83,7 @@
       "name": "teamSection",
       "title": "Team Section",
       "description": "Section showcasing team members.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652216/builtjs/plugin/richjava_about-shad-cn/about-cards1.png",
       "data": {
         "heading": "Meet Our Team"
       },
@@ -96,6 +100,7 @@
       "name": "teamMemberProfile",
       "title": "Team Member Profile",
       "description": "Detailed profile page for a team member.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1733652242/builtjs/plugin/richjava_about-shad-cn/team-member-profile1.png",
       "templates": ["profile1"],
       "type": "body",
       "defaultTemplate": { "name": "profile1" }
