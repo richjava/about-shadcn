@@ -34,7 +34,6 @@ interface TeamSectionProps {
 export default function TeamSection({ content }: TeamSectionProps) {
   const heading = content?.data?.heading || 'Meet Our Team'
   const team = content?.collections?.teamMember || []
-  console.log({team})
 
   return (
     <section id="cards1" className="py-20 bg-gray-50">

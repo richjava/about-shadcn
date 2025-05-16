@@ -21,7 +21,7 @@ interface TeamMemberProfileProps {
   };
 }
 
-export default function TeamMemberProfile({ content }: TeamMemberProfileProps) {
+export default function TeamMemberProfileArticle({ content }: TeamMemberProfileProps) {
   if (!content) return <></>;
   const { entry: member = null } = { ...content };
   if (!member) return <></>;
