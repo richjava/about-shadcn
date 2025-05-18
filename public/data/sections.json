@@ -89,7 +89,7 @@
       },
       "collections": {
         "teamMember": {
-          "config": { "limit": 3, "populate": [{ "name": "profile" }] }
+          "config": { "limit": 3, "populate": [{ "name": "profile", "type": "profile" }] }
         }
       },
       "templates": ["cards1"],

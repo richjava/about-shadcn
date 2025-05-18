@@ -33,7 +33,8 @@
         "config": {
           "populate": [
             {
-              "name": "profile"
+              "name": "profile",
+              "type": "profile"
             }
           ]
         }
